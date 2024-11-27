@@ -8,7 +8,7 @@ c = float(input('C: '))
 domain = np.arange(-10, 10)
 
 range_quadrilateral = a * (domain ** 2) + b * domain + c
-range_logarithmic = np.log(domain) / np.log(2)
+range_logarithmic = np.log2(domain)
 
 mpl.plot(domain, range_quadrilateral, marker='o')
 mpl.plot(domain, range_logarithmic, marker='o')
